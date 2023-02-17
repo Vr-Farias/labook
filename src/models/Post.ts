@@ -1,8 +1,7 @@
-export class Account {
+export class Post {
     constructor(
         private id: string,
-        private balance: number,
-        private ownerId: string,
+        private creatorId: string,
         private createdAt: string
     ) {}
 
@@ -14,20 +13,12 @@ export class Account {
         this.id = value
     }
 
-    public getBalance(): number {
-        return this.balance
+    public getCreatorId(): string {
+        return this.creatorId
     }
 
-    public setBalance(value: number): void {
-        this.balance = value
-    }
-
-    public getOwnerId(): string {
-        return this.ownerId
-    }
-
-    public setOwnerId(value: string): void {
-        this.ownerId = value
+    public setcreatorId(value: string): void {
+        this.creatorId = value
     }
 
     public getCreatedAt(): string {
