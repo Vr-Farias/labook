@@ -1,4 +1,4 @@
--- Active: 1676554120173@@127.0.0.1@3306
+-- Active: 1680798719679@@127.0.0.1@3306
 CREATE TABLE users (
     id TEXT PRIMARY KEY UNIQUE NOT NULL,
     name TEXT NOT NULL,
@@ -28,4 +28,6 @@ VALUES
 INSERT INTO posts (id, creator_id, content)
 VALUES ("p001", "u001", "Imprime 'hello world'");
 
-SELECT * FROM posts
+SELECT * FROM posts;
+
+SELECT * FROM users;

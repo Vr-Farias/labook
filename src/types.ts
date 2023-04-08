@@ -1,4 +1,4 @@
-export type TUserDB = {
+export interface UserDB {
     id: string,
     name: string,
     email: string,
@@ -6,21 +6,9 @@ export type TUserDB = {
     created_at: string
 }
 
-export type TUserDBPost = {
+export interface PostDB {
     id: string,
-    name: string,
-    email: string,
-    password: string
-}
-
-export type TAccountDB = {
-    id: string,
-    balance: number,
-    owner_id: string,
+    creator_id: string,
+    content: string,
     created_at: string
-}
-
-export type TAccountDBPost = {
-    id: string,
-    owner_id: string
 }
